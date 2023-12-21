@@ -1,7 +1,7 @@
 import "./App.css";
 import NavBar from "./Components/NavBar";
-import Experience from "./Components/Sections/Experience";
-import MainSection from "./Components/Sections/MainSection";
+import Experience from "./Sections/Experience";
+import MainSection from "./Sections/MainSection";
 
 function App() {
   return (

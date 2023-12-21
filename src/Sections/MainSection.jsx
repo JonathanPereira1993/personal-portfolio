@@ -1,5 +1,5 @@
 import React from "react";
-import avatar from "../../assets/avatar-photo.png";
+import avatar from "../assets/avatar-photo.png";
 
 const MainSection = () => {
   return (
@@ -8,7 +8,7 @@ const MainSection = () => {
       <div className="absolute min-w-fit flex align-baseline justify-start pt-12 pl-12 left-0 h-1/2  top-1/2 -translate-y-1/2 w-3/5 bg-[url('/src/assets/Bg-main-section-image.jpg')] object-cover bg-no-repeat">
         <img className="" src={avatar} alt="avatar" />
       </div>
-      <div className="text-colorWhite text-7xl right-0 absolute max-w-[800px] h-full flex flex-col top-[400px] items-start mr-10 leading-tight">
+      <div className="text-colorWhite text-7xl ml-[40%] right-0 absolute max-w-[800px] h-full flex flex-col top-[400px] items-start mr-10 leading-tight">
         <h1 className="">
           I’m Jonathan. <br /> A frontend developer
         </h1>

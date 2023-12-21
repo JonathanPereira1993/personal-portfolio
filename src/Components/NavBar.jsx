@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const NavBar = () => {
   const links = [
@@ -20,10 +20,28 @@ const NavBar = () => {
     },
   ];
 
+  const [small, setSmall] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", () =>
+        setSmall(window.pageYOffset > 150)
+      );
+    }
+  }, []);
+
   return (
-    <div className="flex justify-between align-bottom bg-slate-500 px-20 fixed w-full z-50">
+    <div
+      className={`flex justify-between bg-slate-500 px-20 fixed w-full z-50 ${
+        small ? "bg-[#181823] transition-all duration-500 shadow-md" : ""
+      }`}
+    >
       <div className="relative">
-        <h1 className="font-signature pt-8 align-middle text-2xl text-colorWhite">
+        <h1
+          className={`font-signature pt-8 align-middle text-2xl text-colorWhite ${
+            small ? "transition-all duration-500 pt-5" : ""
+          }`}
+        >
           JONATHAN
         </h1>
         <div className="border border-colorLightGrey absolute right-2 -left-20 opacity-40"></div>
