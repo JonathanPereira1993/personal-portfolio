@@ -1,6 +1,6 @@
 import React from "react";
 
-function NumberedCards(props) {
+const NumberedCards = (props) => {
   return (
     <div>
       <span className="text-[116px] text-[#8491A0]">{props.number}</span>
@@ -11,6 +11,6 @@ function NumberedCards(props) {
       <span className="text-base">{props.description}</span>
     </div>
   );
-}
+};
 
 export default NumberedCards;
