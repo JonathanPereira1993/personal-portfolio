@@ -3,8 +3,8 @@ import CardIcon from "../Components/CardIcon";
 
 const Skills = () => {
   return (
-    <div className="mt-[264px] ml-20 mr-20 grid grid-cols-2  gap-6">
-      <div className="min-w-[360px] rox-span-2">
+    <div className="mt-[264px] ml-20 mr-20 grid grid-cols-3 gap-6">
+      <div className="min-w-[360px] row-span-2">
         <h1 className="text-5xl mb-6">Skills</h1>
         <span className="text-lg text-[#8491A0]">
           With skills in over 4 different fields of design, I am the perfect
@@ -12,7 +12,7 @@ const Skills = () => {
           needs are, I can pretty much take on any challenge.
         </span>
       </div>
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-2 col-span-2 gap-6">
         <CardIcon
           title={"Product Design"}
           description={
